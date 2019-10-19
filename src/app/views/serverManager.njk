@@ -1,0 +1,15 @@
+{% include "_layouts/decorator.njk" %}
+<link rel="stylesheet" href="/css/serverManager.css" />
+<div class="main-wrapper">
+  <form
+    class="dropzone"
+    action="app/file"
+    method="post"
+    enctype="multipart/form-data"
+  >
+    <div class="fallback">
+      <input name="file" type="file" multiple />
+    </div>
+  </form>
+</div>
+<script src="/vendor/dropzone.js"></script>

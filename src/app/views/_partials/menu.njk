@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/menu.css" />
+<div class="contenedor">
+  <div class="sidebar ancho">
+    <div class="logo text-warning">
+      <i class="fa fa-ravelry fa-2x logo-sym"></i
+      ><span class="logo-texto">Hércules</span>
+    </div>
+
+    <div class="user">
+      <img src="/file/{{ user.avatar }}" alt="" height="60" />
+      <span class="user-nombre">{{ user.name }}</span>
+    </div>
+
+    <nav class="menu-nav">
+      <ul>
+        <li class="menu-items">
+          <a href="/app/dashboard"
+            ><i class="fa fa-tachometer  menu-nav--icon fa-fw"></i
+            ><span>Dashboard</span></a
+          >
+        </li>
+        <li class="menu-items">
+          <a href="#"
+            ><i class="fa fa-apple  menu-nav--icon fa-fw"></i
+            ><span class="menu-items">Settings Servers</span></a
+          >
+        </li>
+        <li class="menu-items">
+          <a href="/app/logout">Sair</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/menu.js"></script>

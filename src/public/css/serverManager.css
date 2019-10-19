@@ -1,0 +1,12 @@
+.main-wrapper {
+  position: relative;
+  perspective: 800px;
+  width: 240px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 5s;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -167px;
+}
