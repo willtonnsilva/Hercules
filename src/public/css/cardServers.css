@@ -1,4 +1,3 @@
-/* Generals resets and unimportant stuff */
 * {
   margin: 0px;
   padding: 0px;
@@ -13,30 +12,28 @@ body {
   font-weight: 700;
   text-decoration: none;
   position: absolute;
-  top: 640px;
-  left: 50%;
-  margin-left: -35px;
+  top: 500px;
+  left: 25%;
+  margin-left: -25px;
 }
 #view-code:hover {
   color: #34c29e;
 }
-
-/* --- Product Card ---- */
 #make-3D-space {
   position: relative;
-  perspective: 800px;
-  width: 240px;
-  height: 300px;
+  perspective: 300px;
+  width: 40px;
+  height: 30px;
   transform-style: preserve-3d;
   transition: transform 5s;
   position: absolute;
   top: 80px;
-  left: 50%;
+  left: 35%;
   margin-left: -167px;
 }
 #product-front {
-  width: 335px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background: #fff;
   position: absolute;
   left: -5px;
@@ -56,11 +53,11 @@ body {
   transition: all 100ms ease-out;
 }
 #product-card {
-  width: 325px;
-  height: 490px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 0px;
   overflow: hidden;
   transform-style: preserve-3d;
   -webkit-transition: 100ms ease-out;
@@ -68,38 +65,10 @@ body {
   -o-transition: 100ms ease-out;
   transition: 100ms ease-out;
 }
-div#product-card.flip-10 {
-  -webkit-transform: rotateY(-10deg);
-  -moz-transform: rotateY(-10deg);
-  -o-transform: rotateY(-10deg);
-  transform: rotateY(-10deg);
-  transition: 50ms ease-out;
-}
-div#product-card.flip90 {
-  -webkit-transform: rotateY(90deg);
-  -moz-transform: rotateY(90deg);
-  -o-transform: rotateY(90deg);
-  transform: rotateY(90deg);
-  transition: 100ms ease-in;
-}
-div#product-card.flip190 {
-  -webkit-transform: rotateY(190deg);
-  -moz-transform: rotateY(190deg);
-  -o-transform: rotateY(190deg);
-  transform: rotateY(190deg);
-  transition: 100ms ease-out;
-}
-div#product-card.flip180 {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  transition: 150ms ease-out;
-}
 #product-card.animate {
   top: 5px;
   left: 5px;
-  width: 335px;
+  width: 300px;
   height: 500px;
   box-shadow: 0px 13px 21px -5px rgba(0, 0, 0, 0.3);
   -webkit-transition: 100ms ease-out;
@@ -112,9 +81,9 @@ div#product-card.flip180 {
   position: absolute;
   top: 386px;
   left: 0;
-  width: 265px;
-  height: 300px;
-  padding: 27px 35px 35px;
+  width: 300px;
+  height: 40px;
+  padding: 10px 10px 5px 15px !important;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   -o-transition: all 200ms ease-out;
@@ -128,18 +97,19 @@ div#product-card.flip180 {
   transition: all 200ms ease-out;
 }
 .stats-container .product_name {
+  float: left;
   font-size: 22px;
   color: #393c45;
 }
 .stats-container p {
   font-size: 16px;
   color: #b1b1b3;
-  padding: 2px 0 20px 0;
+  padding: 2px 0 10px 0;
 }
 .stats-container .serverStatus {
-  float: right;
   color: #48cfad;
   font-size: 22px;
+  padding-left: 80px;
   font-weight: 600;
 }
 .image_overlay {
@@ -184,7 +154,7 @@ div#product-card.flip180 {
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 0;
-  width: 172px;
+  width: 85px;
   opacity: 0;
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
@@ -277,197 +247,4 @@ div.shadow {
     rgba(0, 0, 0, 0.1)
   );
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
-}
-#flip-back {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-#cx,
-#cy {
-  background: #d2d5dc;
-  position: absolute;
-  width: 0px;
-  top: 15px;
-  right: 15px;
-  height: 3px;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-#flip-back:hover #cx,
-#flip-back:hover #cy {
-  background: #979ca7;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -ms-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-#cx.s1,
-#cy.s1 {
-  right: 0;
-  width: 30px;
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#cy.s2 {
-  -ms-transform: rotate(50deg);
-  -webkit-transform: rotate(50deg);
-  transform: rotate(50deg);
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#cy.s3 {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#cx.s1 {
-  right: 0;
-  width: 30px;
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#cx.s2 {
-  -ms-transform: rotate(140deg);
-  -webkit-transform: rotate(140deg);
-  transform: rotate(140deg);
-  -webkit-transition: all 100ms ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#cx.s3 {
-  -ms-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  -webkit-transition: all 100ease-out;
-  -moz-transition: all 100ms ease-out;
-  -ms-transition: all 100ms ease-out;
-  -o-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-#carousel {
-  width: 335px;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-#carousel ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#carousel li {
-  width: 335px;
-  height: 500px;
-  float: left;
-  overflow: hidden;
-}
-.arrows-perspective {
-  width: 335px;
-  height: 55px;
-  position: absolute;
-  top: 218px;
-  transform-style: preserve-3d;
-  transition: transform 5s;
-  perspective: 335px;
-}
-.carouselPrev,
-.carouselNext {
-  width: 50px;
-  height: 55px;
-  background: #ccc;
-  position: absolute;
-  top: 0;
-  transition: all 200ms ease-out;
-  opacity: 0.9;
-  cursor: pointer;
-}
-.carouselNext {
-  top: 0;
-  right: -26px;
-  -webkit-transform: rotateY(-117deg);
-  -moz-transform: rotateY(-117deg);
-  -o-transform: rotateY(-117deg);
-  transform: rotateY(-117deg);
-  transition: all 200ms ease-out;
-}
-.carouselNext.visible {
-  right: 0;
-  opacity: 0.8;
-  background: #efefef;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  transition: all 200ms ease-out;
-}
-.carouselPrev {
-  left: -26px;
-  top: 0;
-  -webkit-transform: rotateY(117deg);
-  -moz-transform: rotateY(117deg);
-  -o-transform: rotateY(117deg);
-  transform: rotateY(117deg);
-  transition: all 200ms ease-out;
-}
-.carouselPrev.visible {
-  left: 0;
-  opacity: 0.8;
-  background: #eee;
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  transition: all 200ms ease-out;
-}
-#carousel .x,
-#carousel .y {
-  height: 2px;
-  width: 15px;
-  background: #48cfad;
-  position: absolute;
-  top: 31px;
-  left: 17px;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#carousel .x {
-  -ms-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  top: 21px;
-}
-#carousel .carouselNext .x {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#carousel .carouselNext .y {
-  -ms-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
 }

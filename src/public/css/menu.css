@@ -34,7 +34,6 @@
   vertical-align: middle;
 }
 .logo-texto {
-  margin-left: 10px;
   color: #cfa750;
   font-size: 24px;
 }
@@ -46,13 +45,13 @@
 .user img {
   border-radius: 50%;
 }
-.user-nombre {
+.user-name {
   color: white;
   margin-left: 5px;
 }
 
 .menu-nav {
-  padding-left: 0px;
+  padding-left: 15px;
 }
 
 .ancho {
@@ -78,7 +77,7 @@
 
 .ancho-min .menu-items span,
 .ancho-min .logo-texto,
-.ancho-min .user-nombre,
+.ancho-min .user-name,
 .ancho-min .menu-titles,
 .ancho-min .menu-boton,
 .ancho-min .menu-nav-seg {
