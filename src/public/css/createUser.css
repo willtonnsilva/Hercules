@@ -1,0 +1,92 @@
+form {
+  position: relative;
+  perspective: 800px;
+  width: 240px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 5s;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -167px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form > img {
+  margin-bottom: 20px;
+}
+
+form input:not([type="checkbox"]) {
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+form input:not([type="checkbox"]):focus {
+  border-color: #c1b2f3;
+}
+
+form label[for="avatar"] {
+  width: 80px;
+  height: 80px;
+  background: #eee;
+  border-radius: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+form label[for="avatar"] img.preview {
+  width: 100%;
+  min-height: 100%;
+}
+
+form label[for="provider"] {
+  margin: 10px 0 10px;
+  font-size: 13px;
+  color: #444;
+  align-self: center;
+}
+
+form label[for="provider"] input {
+  margin-right: 2px;
+}
+
+form input[type="file"] {
+  display: none;
+}
+
+form button {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+  background: #cfa750;
+  margin-top: 5px;
+}
+
+form button:hover {
+  background: #ab8731;
+}

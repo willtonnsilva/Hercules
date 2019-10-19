@@ -2,7 +2,7 @@ const { User } = require('../models')
 
 class UserController {
   create (req, res) {
-    return res.render('auth/signup')
+    return res.render('createUser')
   }
 
   async post (req, res) {

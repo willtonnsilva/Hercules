@@ -18,8 +18,8 @@ routes.use((req, res, next) => {
   return next()
 })
 
-routes.get('/signup', guestMiddleware, userController.create)
-routes.post('/signup', upload.single('avatar'), userController.post)
+routes.get('/app/createUser', userController.create)
+routes.post('/app/createUser', upload.single('avatar'), userController.post)
 routes.get('/', guestMiddleware, sessionController.create)
 routes.post('/', sessionController.login)
 routes.get('/app/dashboard', dashboardController.index)

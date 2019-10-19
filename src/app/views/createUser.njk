@@ -1,5 +1,7 @@
-{% extends "_layouts/auth.njk" %} {% block body %}
-<form action="/signup" method="post" enctype="multipart/form-data">
+{% include "_layouts/decorator.njk" %}
+<link rel="stylesheet" href="/css/createUser.css" />
+{% block body %}
+<form action="/app/createUser" method="post" enctype="multipart/form-data">
   <label for="avatar">
     <img src="/images/avatar.svg" alt="avatar" height="24" name="avatar" />
   </label>
@@ -10,8 +12,6 @@
   <input type="password" name="password" placeholder="Seha de login" />
 
   <button type="submit">Criar Conta</button>
-
-  <a href="/">Já possuo uma conta</a>
 </form>
 
 <script>
